@@ -68,8 +68,6 @@ img {
     top: 0;
 }
 
-
-
 .hero {
     height: 700px;
     max-width: 1200px;
@@ -87,17 +85,15 @@ img {
 #featured {
     max-width: 1000px; 
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 69px;
 }
 
 #hero-container {
     padding-top: 69px;
 }
 
-#location-container {
+#locations-container {
     padding-top: 69px;
-    position: relative;
-    top: 100px;
 }
 
 
@@ -236,5 +232,19 @@ footer {
     .copy-right h5{
         text-align: center;
         margin: 0 20px;
+    }
+
+    #featured {
+        max-width: 1000px; 
+        margin: 0 auto;
+        padding-top: 138px;
+    }
+    
+    #hero-container {
+        padding-top: 138px;
+    }
+    
+    #locations-container {
+        padding-top: 138px;
     }
 }
