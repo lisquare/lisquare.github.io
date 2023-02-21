@@ -68,10 +68,7 @@ img {
     top: 0;
 }
 
-main {
-    position: relative;
-    top: 69px; /* adjust to match header height */
-}
+
 
 .hero {
     height: 700px;
@@ -89,8 +86,20 @@ main {
 
 #featured {
     max-width: 1000px; 
-    margin: 64px auto;
+    margin: 0 auto;
+    padding-top: 100px;
 }
+
+#hero-container {
+    padding-top: 69px;
+}
+
+#location-container {
+    padding-top: 69px;
+    position: relative;
+    top: 100px;
+}
+
 
 .gallery {
     display: flex;
@@ -187,6 +196,10 @@ li.nav {
 
 /* 5. footer
 ==========================*/
+footer {
+    margin-top: 100px;
+}
+
 .info {
     min-height: 200px;
 }
@@ -227,4 +240,3 @@ li.nav {
         margin: 0 20px;
     }
 }
-
