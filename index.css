@@ -205,7 +205,7 @@ li.nav {
 
 /* x breakpoint
 ===========================*/
-/* For screen sizes less than or equal to 768px (most likely a mobile device), the body element's font size will be set to 12px and the #photo element's width will be set to 100% */
+/* For screen sizes less than or equal to 768px */
 @media only screen and (max-width: 768px) {
     .header {
         display: flex;
