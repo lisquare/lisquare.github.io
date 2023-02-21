@@ -1,0 +1,233 @@
+/* global styling */
+
+* {
+  font-size: 22px;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+  }
+
+/* 1. typography 
+============================*/
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    color: seashell;
+    text-align: center;
+    opacity: 0.9;
+    font-size: 0.75rem;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.0;
+}
+
+h3 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.2;  
+}
+
+
+h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;  
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* 2. Global structure
+============================*/
+.header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+    border-bottom: 1px solid seashell;
+    min-height: 69px;
+    z-index: 1;
+    top: 0;
+}
+
+main {
+    position: relative;
+    top: 69px; /* adjust to match header height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     
+}
+
+
+.hero {
+    height: 700px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-bedford-bizarre.jpg?_gl=1*xlg0vn*_ga*NDIwNTY5MDgzMy4xNjc1MDI3MDQ0*_ga_3LRZM6TM9L*MTY3Njk0MTc5Ni4yMi4xLjE2NzY5NDM1NDguOS4wLjA.") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+
+.featured {
+    max-width: 1000px; 
+    margin: 64px auto;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.pair {
+    max-width: 300px;
+    padding: 10px;
+}
+
+.pair img {
+    width: 100%;
+    height: 200px;
+}
+
+
+.copy {
+    width: 100%;
+    background-color: black;
+}
+
+.locations {
+    min-height: 500px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*xlg0vn*_ga*NDIwNTY5MDgzMy4xNjc1MDI3MDQ0*_ga_3LRZM6TM9L*MTY3Njk0MTc5Ni4yMi4xLjE2NzY5NDM1NDguOS4wLjA.") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+
+.locations h2 {
+    margin-bottom: 15px;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 300px;
+    margin: 20px;
+    background-color: black;
+}
+/* 3. component style
+============================*/
+
+.nav-link {
+    color: seashell;
+    text-decoration: underline;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: teal;
+    text-decoration: none;
+}
+
+/* 4. header
+============================*/
+.logo {
+    padding: 0 10px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.top-nav {
+    float: right;
+    height: 100%;
+    
+}
+
+li.nav {
+    display: inline;
+    padding: 10px;
+}
+
+
+/* 5. footer
+==========================*/
+.info {
+    min-height: 200px;
+}
+
+.copy-right h5{
+    text-align: left;
+    margin: 0 20px;
+}
+
+
+
+/* x breakpoint
+===========================*/
+/* For screen sizes less than or equal to 768px (most likely a mobile device), the body element's font size will be set to 12px and the #photo element's width will be set to 100% */
+@media only screen and (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: black;
+        border-bottom: 1px solid seashell;
+        min-height: 69px;
+        z-index: 1;
+        top: 0;
+    }
+    
+    .logo {
+        padding-top: 20px;
+    }
+
+    .copy-right h5{
+        text-align: center;
+        margin: 0 20px;
+    }
